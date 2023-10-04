@@ -1,0 +1,37 @@
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+// body {
+//     font-size: 16px;
+//     color: $default-color;
+//     @extend %dmsans-400;
+//     line-height: 30px;
+//     display: flex;
+//     flex-direction: column;
+// }
+
+// .container {
+//     max-width: 1770px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+
+// .footer {
+//     max-width: 1200px;
+//     margin: 0 auto;
+// }
+
+// .title {
+//     @extend %dmsans-700;
+//     font-size: 36px;
+//     line-height: 40px;
+//     color: $title-color;
+//     margin-bottom: 40px;
+//     text-align: center;
+// }
