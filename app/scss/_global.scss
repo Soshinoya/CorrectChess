@@ -7,31 +7,34 @@ body {
     flex-grow: 1;
 }
 
-// body {
-//     font-size: 16px;
-//     color: $default-color;
-//     @extend %dmsans-400;
-//     line-height: 30px;
-//     display: flex;
-//     flex-direction: column;
-// }
+body {
+    color: $white-color;
+    font-size: 20px;
+    @extend %notosans-400;
+    line-height: 130%;
+    display: flex;
+    flex-direction: column;
+}
 
-// .container {
-//     max-width: 1770px;
-//     margin: 0 auto;
-//     padding: 0 15px;
-// }
+.container {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 // .footer {
 //     max-width: 1200px;
 //     margin: 0 auto;
 // }
 
-// .title {
-//     @extend %dmsans-700;
-//     font-size: 36px;
-//     line-height: 40px;
-//     color: $title-color;
-//     margin-bottom: 40px;
-//     text-align: center;
-// }
+h1 {
+    font-size: 70px;
+    @extend %notosans-600;
+    line-height: 90%;
+}
+
+h2 {
+    font-size: 22px;
+    letter-spacing: 1.21px;
+    text-transform: uppercase;
+}

@@ -1,6 +1,25 @@
-// $accent-color: #2B6373;
+$blue-color: #5036E6;
+$green-color: #009465;
+$soft-gray-color: #8E9199;
+$white-color: #fff;
+$black-color: #000;
 
-// %dmsans-700 {
-//   font-family: 'DMSans-Bold', sans-serif;
-//   font-weight: 700;
-// }
+%notosans-400 {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+}
+
+%notosans-500 {
+    font-family: 'Noto Sans';
+    font-weight: 500;
+}
+
+%notosans-600 {
+    font-family: 'Noto Sans';
+    font-weight: 600;
+}
+
+%notosans-700 {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+}
