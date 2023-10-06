@@ -1,0 +1,7 @@
+mixin member(memberInfo)
+    .member
+        .member__img
+            img(src='#{memberInfo.imgSrc}' alt="member #{memberInfo.title}")
+        .member__info
+            h2= memberInfo.title
+            p= memberInfo.text

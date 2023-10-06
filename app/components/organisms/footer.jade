@@ -1,2 +1,11 @@
-mixin footer()
+include ../atoms/Button.jade
+
+mixin footer(btnHref, btnText, infoText, copyright)
     footer.footer
+        a(href="#home-page")
+            .footer__img
+                img(src="../../images/logo/logo.svg" alt="logotype")
+        +button(btnHref, btnText)
+        .footer__info
+            p.footer__text= infoText
+            span.footer__copyright= copyright
