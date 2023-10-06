@@ -1,0 +1,8 @@
+include ../organisms/header.jade
+include ../organisms/footer.jade
+
+mixin basicTemplate()
+    +header('#join', 'Вступайте в клуб', '#auth', 'Зарегистрироваться')
+    main.main
+        block
+    +footer()

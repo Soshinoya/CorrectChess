@@ -13,6 +13,13 @@ const htmlmin        = require('gulp-htmlmin');
 const del            = require('del');
 const { notify }     = require('browser-sync');
 const browserSync    = require('browser-sync').create();
+const jade           = require('gulp-jade');
+
+function jadeCompiler() {
+  return src('app/*.jade')
+    .pipe(jade())
+    .pipe(dest('app/'));
+};
 
 function html() {
   return src('app/**/*.html')
@@ -76,7 +83,8 @@ function cleanDist() {
 function watching() {
   watch(['app/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/**/*.jade'], jadeCompiler).on('change', browserSync.reload);
+  // watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
 
@@ -87,8 +95,9 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.img = img;
 exports.html = html;
+exports.jadeCompiler = jadeCompiler;
 exports.cleanDist = cleanDist;
 exports.dist = series(cleanDist, dist);
 
 
-exports.default = parallel(styles, scripts, img, browsersync, watching);
+exports.default = parallel(jadeCompiler, styles, scripts, img, browsersync, watching);

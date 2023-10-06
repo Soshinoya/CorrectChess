@@ -26,28 +26,22 @@
 
     &__link {
         position: relative;
-        padding-right: 10px;
+        padding-right: 24px;
         font-size: 15px;
         line-height: 110%;
         letter-spacing: 0.15px;
+        color: $white-color;
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             right: 0;
             top: 50%;
             transform: translateY(-50%);
+            width: 11px;
+            height: 13px;
+            background-image: url(../images/arrow-top-right.svg);
+            background-repeat: no-repeat;
         }
-    }
-
-    &__button {
-        @extend %notosans-600;
-        font-size: 15px;
-        line-height: 18px;
-        letter-spacing: 0.15px;
-        border: none;
-        padding: 15px 30px;
-        background-color: $green-color;
-        border-radius: 8px;
     }
 }

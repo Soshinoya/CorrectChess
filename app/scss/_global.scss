@@ -38,3 +38,16 @@ h2 {
     letter-spacing: 1.21px;
     text-transform: uppercase;
 }
+
+.button {
+    @extend %notosans-600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    border: none;
+    padding: 15px 30px;
+    background-color: $green-color;
+    border-radius: 8px;
+    cursor: pointer;
+    color: $white-color;
+}
