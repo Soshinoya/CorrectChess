@@ -42,6 +42,7 @@
             height: 13px;
             background-image: url(../images/icons/arrow-top-right.svg);
             background-repeat: no-repeat;
+            color: #fff;
         }
     }
 }
@@ -77,19 +78,19 @@
 
 .promotion {
     position: relative;
-    padding: 65px 0 80px;
+    padding: 60px 0 80px;
     background-color: $black-color;
     overflow: hidden;
 
-    &::after {
-        content: "";
+    &__bg {
         position: absolute;
-        bottom: 0;
+        bottom: 80px;
         right: -160px;
         width: 640px;
         height: 640px;
         background-image: url(../images/bg/promotion-bg.svg);
         background-repeat: no-repeat;
+        transition: right 0.2s $transitionTimingFunc;
     }
 
     &__inner {
@@ -122,10 +123,14 @@
 
     &__cards {
         margin-top: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 80px;
+
+        .swiper-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            bottom: -38px;
+        }
     }
 }
 
@@ -155,6 +160,8 @@
         right: 60%;
         width: 880px;
         height: 440px;
+        background-image: url(../images/bg/offer-bg.svg);
+        background-repeat: no-repeat;
 
         transition: right 0.2s $transitionTimingFunc;
 
@@ -198,9 +205,13 @@
     }
 
     &__cards {
-        display: flex;
-        align-items: center;
-        gap: 80px;
+        .swiper-pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            bottom: 0;
+        }
     }
 
     &__card {

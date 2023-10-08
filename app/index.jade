@@ -21,19 +21,23 @@ html(lang='ru')
                             и бою с гройсмейстером. 
                         .promotion__illustrate
                             img(src="./images/patterns/promotion-pattern.svg" alt="promotion pattern")
+                        .promotion__bg
             section.team
                 .container
                     h1 Наша команда
                     p.team__text Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!
                     .team__cards
-                        - var membersList = [{imgSrc: './images/members/1.jpg',title: 'Андрей',text: 'Шахматист, писатель.'},{imgSrc: './images/members/2.jpg',title: 'Никита',text: 'Шахматист, кулинар.'},{imgSrc: './images/members/3.jpg',title: 'Алексей',text: 'Шахматист, геймер.'}]
-                        for memberInfo in membersList
-                            +member(memberInfo)
+                        .swiper
+                            .swiper-wrapper
+                                - var membersList = [{imgSrc: './images/members/1.jpg',title: 'Андрей',text: 'Шахматист, писатель.'},{imgSrc: './images/members/2.jpg',title: 'Никита',text: 'Шахматист, кулинар.'},{imgSrc: './images/members/3.jpg',title: 'Алексей',text: 'Шахматист, геймер.'}]
+                                for memberInfo in membersList
+                                    .swiper-slide
+                                        +member(memberInfo)
+                            .team__cards.swiper-pagination
             section.offer
                 .container
                     .offer__inner
                         .offer__bg
-                            img(src="./images/bg/offer-bg.svg" alt="offer bg")
                         .offer__info
                             h1.offer__title Хочешь в комаду?
                             p.text Свяжись с нами и мы обсудим все детали присоеденения к команде.
@@ -44,12 +48,18 @@ html(lang='ru')
                             h1.battles__title Сражения
                             p.battles__text Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.
                         .battles__cards
-                            .battles__card
-                                img(src="./images/gallery/1.jpg" alt="chess battle")
-                            .battles__card
-                                img(src="./images/gallery/2.jpg" alt="chess battle")
-                            .battles__card
-                                img(src="./images/gallery/3.jpg" alt="chess battle")
+                            .swiper
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .battles__card
+                                            img(src="./images/gallery/1.jpg" alt="chess battle")
+                                    .swiper-slide
+                                        .battles__card
+                                            img(src="./images/gallery/2.jpg" alt="chess battle")
+                                    .swiper-slide
+                                        .battles__card
+                                            img(src="./images/gallery/3.jpg" alt="chess battle")
+                                .battles__cards.swiper-pagination
                         .battles__illustrate
                             img(src="./images/patterns/battles-pattern.svg" alt="battles pattern")
 

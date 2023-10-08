@@ -50,7 +50,7 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     color: $white-color;
-    transition: background-color .3s $transitionTimingFunc;
+    transition: background-color 0.3s $transitionTimingFunc;
 
     &:hover {
         background-color: $dark-green-color;
@@ -90,4 +90,13 @@ h2 {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+.pagination-bullet {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $white-color;
+    opacity: 0.2;
 }

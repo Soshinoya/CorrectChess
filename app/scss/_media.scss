@@ -1,4 +1,8 @@
 @media (max-width: 1000px) {
+    .promotion__bg {
+        right: -300px;
+    }
+
     .offer__bg {
         right: 70%;
     }
@@ -9,7 +13,206 @@
 }
 
 @media (max-width: 840px) {
+    .promotion__bg {
+        right: -400px;
+    }
+
     .offer__bg {
         right: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotion__bg {
+        right: -500px;
+    }
+
+    .team {
+        padding: 50px 0;
+
+        &__cards {
+            margin-top: 140px;
+        }
+    }
+
+    .offer {
+        padding: 120px 0;
+    }
+
+    .battles {
+        padding: 50px 0 80px;
+
+        &__inner {
+            gap: 140px;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .promotion__bg {
+        width: 120px;
+        height: 60px;
+        top: 60px;
+        right: 15px;
+        background-image: url(../images/bg/promotion-mobile-bg.svg);
+    }
+
+    .offer {
+        &__info {
+            margin-bottom: 80px;
+        }
+
+        &__bg {
+            width: 280px;
+            height: 140px;
+            background-image: url(../images/bg/offer-modile-bg.svg);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header__link {
+        display: none;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .promotion {
+        padding: 40px 0 20px;
+
+        &__title {
+            margin-top: 60px;
+            font-size: 40px;
+        }
+
+        &__text {
+            margin-top: 20px;
+        }
+
+        &__illustrate {
+            margin-top: 110px;
+        }
+
+        &__bg {
+            top: 40px;
+        }
+    }
+
+    .offer {
+        &__info {
+            align-items: flex-start;
+        }
+    }
+
+    .battles {
+        &::after {
+            content: none;
+        }
+
+        &__illustrate {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+        letter-spacing: 0.99px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 10px;
+        padding: 6px 16px;
+    }
+
+    .header__img {
+        width: 26px;
+        height: 36px;
+    }
+
+    .subtitle {
+        padding: 14px;
+        padding-right: 17px;
+        font-size: 12px;
+    }
+
+    .promotion {
+        padding: 0;
+        padding-bottom: 20px;
+
+        &__bg {
+            top: 0;
+        }
+    }
+
+    .team {
+        padding: 0;
+        padding-top: 20px;
+
+        &__text {
+            margin-top: 20px;
+        }
+
+        &__cards {
+            margin-top: 60px;
+            padding-bottom: 38px;
+        }
+    }
+
+    .member {
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 38px;
+
+        &__img {
+            height: 280px;
+        }
+    }
+
+    .offer {
+        padding: 20px 0;
+
+        &__info {
+            margin-bottom: 180px;
+            gap: 20px;
+        }
+    }
+
+    .battles {
+        padding: 20px 0;
+
+        &__info {
+            gap: 20px;
+        }
+
+        &__inner {
+            gap: 60px;
+        }
+
+        &__card {
+            padding-bottom: 38px;
+            margin: 0 auto;
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+    .footer {
+        gap: 40px;
+
+        &__copyright {
+            font-size: 12px;
+        }
     }
 }
