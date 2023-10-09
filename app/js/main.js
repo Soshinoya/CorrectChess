@@ -44,3 +44,13 @@ const battlesMembersSlider = new Swiper('.battles__cards > .swiper', {
         }
     }
 })
+
+// Form submit handler
+
+const registerFormElem = document.querySelector('.register-form')
+
+registerFormElem && registerFormElem.addEventListener('submit', e => {
+    e.preventDefault()
+    const formData = new FormData(registerFormElem)
+    formData.forEach((val, name) => console.log(`${name}: ${val}`))
+})

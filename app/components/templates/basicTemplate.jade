@@ -2,7 +2,7 @@ include ../organisms/header.jade
 include ../organisms/footer.jade
 
 mixin basicTemplate()
-    +header('#join', 'Вступайте в клуб', '#auth', 'Зарегистрироваться')
+    +header('#join', 'Вступайте в клуб', 'button', 'Зарегистрироваться')
     main.main
         block
-    +footer('#auth', 'Зарегистрироваться', 'Шахматный клуб в Москве.', '© Chees Club.')
+    +footer('button', 'Зарегистрироваться', 'Шахматный клуб в Москве.', '© Chees Club.')

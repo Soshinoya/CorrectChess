@@ -34,6 +34,12 @@ h1 {
 }
 
 h2 {
+    @extend %notosans-600;
+    font-size: 34px;
+    line-height: 90%;
+}
+
+h3 {
     font-size: 22px;
     letter-spacing: 1.21px;
     text-transform: uppercase;
@@ -54,6 +60,36 @@ h2 {
 
     &:hover {
         background-color: $dark-green-color;
+    }
+}
+
+.input {
+    width: 100%;
+    background-color: rgb($black-500-color, 1);
+    border: 1px solid $black-500-color;
+    border-radius: 8px;
+    color: $white-color;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.15px;
+    padding: 15px 30px;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s $transitionTimingFunc,
+        border-color 0.2s $transitionTimingFunc;
+
+    &:hover {
+        background-color: rgb($black-500-color, 0.6);
+    }
+
+    &:focus {
+        border-color: $blue-color;
+        outline: none;
+
+        &::placeholder {
+            display: none;
+        }
     }
 }
 

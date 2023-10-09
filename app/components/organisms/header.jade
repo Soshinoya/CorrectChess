@@ -1,6 +1,6 @@
 include ../atoms/Button.jade
 
-mixin header(linkHref, linkText, btnHref, btnText)
+mixin header(linkHref, linkText, btnType, btnText)
     header.header
         .container
             .header__inner
@@ -9,4 +9,5 @@ mixin header(linkHref, linkText, btnHref, btnText)
                         img(src="../../images/logo/logo.svg" alt="logotype")
                 .header__links
                     a.header__link(href=linkHref)= linkText
-                    +button(btnHref, btnText)
+                    a(href="/register.html")
+                        +button(btnType, btnText)

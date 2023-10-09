@@ -46,6 +46,10 @@
             gap: 140px;
         }
     }
+
+    .register-form {
+        gap: 240px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -118,10 +122,36 @@
             margin: 0 auto;
         }
     }
+
+    .register-form {
+        width: 280px;
+        margin-top: 40px;
+        gap: 140px;
+        
+        &__inputs {
+            gap: 10px;
+        }
+    }
+
+    .register {
+        &__title {
+            margin-top: 40px;
+        }
+    }
+
+    .input {
+        padding: 10px 20px;
+        font-size: 12px;
+        letter-spacing: 0.12;
+    }
 }
 
 @media (max-width: 480px) {
     h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
         font-size: 18px;
         letter-spacing: 0.99px;
     }
@@ -135,7 +165,8 @@
         padding: 6px 16px;
     }
 
-    .header__img {
+    .header__img,
+    .register__img {
         width: 26px;
         height: 36px;
     }

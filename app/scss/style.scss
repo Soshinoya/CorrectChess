@@ -230,4 +230,41 @@
     }
 }
 
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $black-color;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-top: 50px;
+    }
+}
+
+.register-form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    margin-top: 80px;
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
 @import "media";

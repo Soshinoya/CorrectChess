@@ -1,0 +1,26 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Регистрация
+        link(rel="stylesheet" href="css/style.min.css")
+    body
+        include ./components/atoms/Input.jade
+        include ./components/atoms/Button.jade
+
+        main.main
+            section.register
+                .register__inner
+                    a(href="#home-page")
+                        .register__img
+                            img(src="./images/logo/logo.svg" alt="logotype")
+                    h2.register__title Регистрация
+                    form.register-form
+                        .register-form__inputs
+                            +input('text', 'name', 'Имя', true)
+                            +input('email', 'email', 'Email', true)
+                        +button('submit', 'Зарегистрироваться')
+
+        script(src="js/main.min.js" defer)
